@@ -34,8 +34,6 @@ nav button{
     cursor: pointer;
     background-color: black;
     color: white;
-    align-self: flex-start;
-
 }
 
 nav a{
@@ -66,10 +64,8 @@ nav li a {
 }
 
 nav ul {
-	flex-direction: column;
 	margin: 0;
 	padding: 0;
-	display: flex;
 }
 
 nav li{
@@ -83,9 +79,9 @@ nav li{
 	margin: auto;
 }
 
-#container-flex {
-	display: flex;
-	flex-direction: row-reverse;
+#container-grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
 }
 
 .container .content {
@@ -98,9 +94,11 @@ nav li{
 }
 
 .container .project {
-	display: flex;
-	justify-content: flex-start;
 	padding: 40px 0;
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
+	justify-content: left;
 }
 
 .container .project a {
@@ -132,8 +130,10 @@ nav li{
 }
 
 .container .info {
-	display: flex;
-	justify-content: flex-start;
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
+	justify-content: left;
 }
 
 .container .contact img {
