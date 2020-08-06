@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<span class="heading" type="button" id="button">&#x2630;</span> 
+		<span><a class="heading" href="index.html">Adaptable</a></span>
+
+		<nav id="nav-bar">
+			<ul>
+				<li id="li"><a href="index.html">HOME</a></li>
+				<li id="li"><a href="projects.html">PROJECTS</a></li>
+				<li id="li"><a href="contact.html">CONTACT US</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container" id="container-flex">
+		<div class="content">
+			<h1>This pages were built using Flexbox</h1>
+			<p>We are independent Web Developers from Thunder Bay, ON. We enjoy building stunning Web Applications with best possible visuals. If you are a small business owner and needs to develop a web site, you can contact us now.</p>
+			<p>You can join our newsletter by entering your information below!</p>
+			<form type="POST" id="form" onsubmit="onFormSubmit(event)">
+				<input type="text" id="email" placeholder="user@example.com">
+				<button type="submit" id="submit">Submit</button>
+			</form>
+			<div id="error"></div>
+		</div>
+		<div class="image">
+			 <img id="profile" src="images/profile.jpg"><br>
+		</div>
+	</div>
+
+	<footer>
+		<p>This Website design was inspired from <a target="_blank" href="https://taylorpearson.me/">taylorpearson.me</a></p>
+	</footer>
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
